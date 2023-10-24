@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
-    <title>Check Balance</title>
+    <title>Transfer Funds</title>
 </head>
 <body>
     <div class="header">
         <h1>Welcome to Chris' Corp. Bank</h1>
       </div>
         <div class="col-6"> 
-          <h1 style="text-align: center;">Balance</h1>
-          <p style="text-align: center;">This is your total balance located in your account and your bank ID</p>
+          <h1 style="text-align: center;">Transfer</h1>
+          <p style="text-align: center;">This is where you transfer funds to someone else with their ID</p>
            </div>
         <div class="col-6 right">
           <div class="aside">
-            <h2 style="text-align: center;">Rp 86,142,963.67</h2>
-
-            <h2 style="text-align: center;">ID = 17031751</h2>
+            <form action="tf2.html">
+                <label for="id">Reciever id:</label><br>
+                <input type="text" id="id" name="id" required><br>
+                <label for="cash">Funds:</label><br>
+                <input type="text" id="cash" name="cash" required><br><br>
+                <input type="submit" value="Submit">
+              </form> 
+              <br><h2>Transfer Successful</h2>
           </div>
         </div>
       </div>
